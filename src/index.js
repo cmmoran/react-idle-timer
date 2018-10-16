@@ -19,14 +19,14 @@ import PropTypes from 'prop-types'
  * @type {Boolean}
  * @private
  */
-const IS_BROWSER = (typeof window === 'undefined' ? 'undefined' : typeof (window)) === 'object'
+const IS_BROWSER = false
 
 /**
  * Default element to listen for events on
  * @type {Object}
  * @private
  */
-const DEFAULT_ELEMENT = IS_BROWSER ? document : {}
+const DEFAULT_ELEMENT = {}
 
 /**
  * The default events to determine activity
